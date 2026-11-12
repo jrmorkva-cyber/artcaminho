@@ -1,0 +1,88 @@
+<!-- title: ARTCAMINHO — художественные материалы, мозаика и мастер-классы | active: home | layout: home -->
+<section class="container hero">
+  <a class="card-mini hero__photo" href="catalog.html?cat=supplies">
+    <span class="card-mini__media"><img class="card-mini__img" src="assets/img/hero-palette.jpg" alt="Палитра, краски и кисти на столе" width="338" height="383" fetchpriority="high"></span>
+    <h3 class="card-mini__title title-16">Акварель и палитры</h3>
+    <p class="card-mini__price price">от 1 200 ₽</p>
+  </a>
+  <a class="card-mini hero__photo" href="catalog.html?cat=supplies">
+    <span class="card-mini__media"><img class="card-mini__img hero-easel" src="assets/img/hero-easel.jpg" alt="Мольберт и цветы в мастерской" width="338" height="383" fetchpriority="high"></span>
+    <h3 class="card-mini__title title-16">Мольберты</h3>
+    <p class="card-mini__price price">от 4 500 ₽</p>
+  </a>
+  <div class="hero__side">
+    <header class="header">
+      <div class="header__logo header__logo--mobile">{{logo}}</div>
+      {{nav}}
+      {{header-actions}}
+    </header>
+    <div class="hero__body">
+      <div class="hero__text">
+        <svg class="asterisk" aria-hidden="true"><use href="#i-asterisk"/></svg>
+        <h1 class="lead"><span class="visually-hidden">ARTCAMINHO — художественные материалы, мозаика и мастер-классы в Тольятти. </span>Искусство —<br>это путь.<br>Начните здесь.</h1>
+      </div>
+      <a class="card-mini hero__small" href="catalog.html?cat=supplies">
+        <span class="card-mini__media"><img class="card-mini__img" src="assets/img/hero-brushes.jpg" alt="Кисти и краски" width="164" height="185"></span>
+        <h3 class="card-mini__title title-16">Кисти</h3>
+        <p class="card-mini__price price">от 350 ₽</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<p class="wordmark" aria-hidden="true" data-reveal><span class="logo__word"><span style="--i:0">A</span><span style="--i:1">R</span><span style="--i:2">T</span><span style="--i:3">C</span><span style="--i:4">A</span><span style="--i:5">M</span><span style="--i:6">l</span><span style="--i:7">N</span><span style="--i:8">H</span><span style="--i:9">O</span></span><sup>®</sup></p>
+
+<section class="catalog-section" aria-label="Каталог">
+  <div class="container">
+    <div class="catalog">
+      <div>{{filter}}</div>
+      <div>
+      <div class="products">
+        {{card*9}}
+      </div>
+      <a class="btn btn--light catalog-more" href="catalog.html">Смотреть весь каталог</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h1">Категории</h2>
+      <div class="arrows">
+        <button class="square-btn square-btn--light" type="button" data-scroll-prev="#categories" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+        <button class="square-btn" type="button" data-scroll-next="#categories" aria-label="Вперёд"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+      </div>
+    </div>
+    <div class="categories" id="categories" data-categories>
+      <a class="category" href="catalog.html?cat=ready">
+        <span class="category__title">Готовые изделия</span>
+        <img class="category__img" src="assets/img/cat-ready.jpg" alt="" loading="lazy">
+        <span class="category__tags"><span class="tag">Мозайка</span><span class="tag">Керамика</span><span class="tag">Живопись</span><span class="tag">Картины</span></span>
+      </a>
+      <a class="category is-active" href="catalog.html?cat=supplies">
+        <span class="category__title">Расходные материалы</span>
+        <img class="category__img" src="assets/img/cat-supplies.jpg" alt="" loading="lazy">
+        <span class="category__tags"><span class="tag">Смальта</span><span class="tag">Холст</span><span class="tag">Холст на подрамнике</span><span class="tag">Клей</span><span class="tag">Краски</span><span class="tag">Кисти</span><span class="tag tag--fill">Еще</span></span>
+      </a>
+      <a class="category" href="catalog.html?cat=baguette">
+        <span class="category__title">Багет</span>
+        <img class="category__img" src="assets/img/cat-baguette.jpg" alt="" loading="lazy">
+        <span class="category__tags"><span class="tag">Деревянный</span><span class="tag">Пластиковый</span><span class="tag tag--fill">Еще</span></span>
+      </a>
+      <a class="category" href="catalog.html?cat=online">
+        <span class="category__title">Онлайн продажи</span>
+        <img class="category__img" src="assets/img/cat-online.jpg" alt="" loading="lazy">
+        <span class="category__tags"><span class="tag">Новинки</span><span class="tag">Скидки</span></span>
+      </a>
+      <a class="category" href="courses.html">
+        <span class="category__title">Курсы и мастер-классы</span>
+        <img class="category__img" src="assets/img/cat-courses.jpg" alt="" loading="lazy">
+        <span class="category__tags"><span class="tag">Смальта</span><span class="tag">Живопись</span><span class="tag">Рисунок</span><span class="tag">Иконы</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{cta}}

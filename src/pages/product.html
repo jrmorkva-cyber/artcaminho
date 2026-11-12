@@ -1,0 +1,66 @@
+<!-- title: Набор Cretacolor Creativo Drawing Set — ARTCAMINHO | active: shop | layout: page -->
+<div class="container">
+  <p class="breadcrumbs"><a href="index.html">Главная</a> - <a href="catalog.html">Магазин</a></p>
+
+  <section class="product" data-product data-name="Cretacolor" data-price="20000" data-img="assets/img/product-cretacolor.webp">
+    <div class="product-gallery" data-gallery>
+      <div class="product-gallery__thumbs">
+        <button class="product-gallery__thumb is-active" type="button" aria-label="Фото 1"><img src="assets/img/product-cretacolor.webp" alt=""></button>
+        <button class="product-gallery__thumb" type="button" aria-label="Фото 2"><img src="assets/img/product-cretacolor.webp" alt=""></button>
+        <button class="product-gallery__thumb" type="button" aria-label="Фото 3"><img src="assets/img/product-cretacolor.webp" alt=""></button>
+      </div>
+      <div class="product-gallery__main">
+        <button class="product-card__nav product-card__nav--prev" type="button" data-gallery-prev aria-label="Предыдущее фото"><svg aria-hidden="true"><use href="#i-arrow-left-sm"/></svg></button>
+        <img src="assets/img/product-cretacolor.webp" alt="Набор Cretacolor Creativo Drawing Set" width="290" height="281" data-gallery-main>
+        <button class="product-card__nav product-card__nav--next" type="button" data-gallery-next aria-label="Следующее фото"><svg aria-hidden="true"><use href="#i-arrow-right-sm"/></svg></button>
+        <div class="dots" data-gallery-dots>
+          <button class="is-active" type="button" aria-label="Фото 1"></button>
+          <button type="button" aria-label="Фото 2"></button>
+          <button type="button" aria-label="Фото 3"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1 class="product-info__title">Cretacolor</h1>
+      <p class="product-info__price price">20 000 ₽</p>
+      <p class="product-info__desc">Подарочный набор Creativo Drawing Set от австрийской мануфактуры Cretacolor: 27 предметов для графики и скетчинга в деревянном кейсе. Чернографитные и угольные карандаши разной мягкости, пастель, сангина, ластик-клячка и растушёвка — всё, чтобы попробовать разные техники рисунка и не докупать мелочи.</p>
+      <div class="product-info__actions">
+        <button class="btn" type="button" data-add-to-cart>Добавить в корзину</button>
+        <a class="btn btn--light" href="tel:+79000000000">Заказать по телефону</a>
+        <button class="fav-btn fav-btn--lg" type="button" data-fav aria-label="В избранное" aria-pressed="false"><svg aria-hidden="true"><use href="#i-heart"/></svg></button>
+      </div>
+      <div class="accordion" data-accordion>
+        <div class="accordion__item is-open">
+          <button class="accordion__head" type="button" aria-expanded="true">Характеристики</button>
+          <div class="accordion__body"><div><p>Производитель: Cretacolor, Австрия. В наборе 27 предметов: графитные карандаши 2H–8B, угольные карандаши, пастельные мелки, сангина, сепия, ластик-клячка, растушёвка, точилка. Упаковка — деревянный кейс 32 × 24 см. Подходит для начинающих и профессионалов.</p></div></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__head" type="button" aria-expanded="false">Как заказать</button>
+          <div class="accordion__body"><div><p>Добавьте товар в корзину и оставьте номер телефона — мы перезвоним в течение 15 минут в рабочее время, подтвердим наличие и договоримся о получении. Онлайн-оплаты на сайте нет: оплата наличными или картой при получении либо переводом после подтверждения заказа.</p></div></div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__head" type="button" aria-expanded="false">Доставка и самовывоз</button>
+          <div class="accordion__body"><div><p>Самовывоз из мастерской в Тольятти ежедневно с 10:00 до 20:00. Доставка курьером по Тольятти — в день заказа или на следующий день. В другие города отправляем СДЭК и Почтой России, стоимость рассчитаем при звонке.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="section" style="padding-top:clamp(80px,10.5vw,152px)">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h1">Вы смотрели</h2>
+      <div class="arrows">
+        <button class="square-btn square-btn--light" type="button" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+        <button class="square-btn" type="button" aria-label="Вперёд"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+      </div>
+    </div>
+    <div class="products products--4">
+      {{card*4}}
+    </div>
+  </div>
+</section>
+
+{{cta}}

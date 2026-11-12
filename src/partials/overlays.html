@@ -1,0 +1,71 @@
+<!-- Мобильное меню -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__top">
+    {{logo}}
+    <button class="square-btn square-btn--light" type="button" data-menu-close aria-label="Закрыть меню"><svg class="icon" style="width:15px;height:15px" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <ul class="mobile-menu__list">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog.html">Магазин</a>
+      <div class="mobile-menu__sub">
+        <a href="catalog.html?cat=ready">Готовые изделия</a>
+        <a href="catalog.html?cat=supplies">Расходные материалы</a>
+        <a href="catalog.html?cat=baguette">Багет</a>
+        <a href="catalog.html?cat=online">Онлайн продажи</a>
+      </div>
+    </li>
+    <li><a href="courses.html">Курсы</a></li>
+    <li><a href="gallery.html">Галерея</a></li>
+    <li><a href="mosaic.html">Мозаика</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+  <a class="mobile-menu__phone" href="tel:+79000000000">+7 900 000-00-00</a>
+  <div class="mobile-menu__bottom">
+    <a class="btn btn--light" href="favorites.html">Избранное <span data-fav-count-text></span></a>
+    <button class="btn" type="button" data-cart-open>Корзина <span data-cart-count-text></span></button>
+  </div>
+</div>
+
+<!-- Корзина -->
+<div class="overlay" data-overlay="cart"></div>
+<aside class="cart" id="cart" aria-label="Корзина" aria-hidden="true">
+  <div class="cart__main">
+    <div class="cart__scroll">
+      <p class="breadcrumbs" style="padding:0"><a href="index.html">Главная</a> - Корзина</p>
+      <ul class="cart__list" data-cart-list></ul>
+    </div>
+    <div class="cart__total"><span>Итог</span><span data-cart-total>0 ₽</span></div>
+  </div>
+  <div class="cart__aside">
+    <h2 class="cart__aside-title">Оформим<br>заказ<br>по телефону</h2>
+    <p>Оставьте номер — перезвоним в течение 15 минут в рабочее время, уточним наличие, доставку и удобный способ оплаты. Онлайн-оплаты на сайте нет: вы платите только после подтверждения заказа.</p>
+    <form class="subscribe subscribe--stack" data-subscribe action="send.php" method="post" novalidate>
+      <input class="visually-hidden" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="subscribe__row">
+        <input class="subscribe__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" aria-label="Телефон" required autocomplete="tel" inputmode="tel" data-phone>
+        <button class="btn" type="submit">Жду звонка</button>
+      </div>
+      <label class="check"><input type="checkbox" name="agree" required><span class="check__box"></span><span>Согласен на <a href="privacy.html">обработку персональных данных</a></span></label>
+    </form>
+    <p class="cart__call">Или позвоните сами: <a href="tel:+79000000000">+7 900 000-00-00</a></p>
+  </div>
+  <button class="modal-close" type="button" data-cart-close aria-label="Закрыть корзину" style="color:var(--c-accent)"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+</aside>
+
+<!-- Окно «Заявка отправлена» -->
+<div class="overlay success-modal" data-overlay="success" role="dialog" aria-modal="true" aria-labelledby="success-title">
+  <button class="square-btn square-btn--light modal-close" type="button" data-close aria-label="Закрыть"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  <div class="success">
+    <p class="success__text" id="success-title">Спасибо!<br>Скоро<br>перезвоним</p>
+    <p class="success__sub">Обычно в течение 15 минут в рабочее время: ежедневно с 10:00 до 20:00</p>
+    <button class="btn" type="button" data-close>Ок</button>
+  </div>
+</div>
+
+<!-- Cookie -->
+<div class="cookie" data-cookie role="region" aria-label="Уведомление о cookie" hidden>
+  <p>Мы используем cookie и локальное хранилище браузера, чтобы запоминать корзину и избранное и показывать карту. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="cookies.html">политикой cookie</a>.</p>
+  <button class="btn" type="button" data-cookie-accept>Хорошо</button>
+</div>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>

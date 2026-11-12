@@ -1,0 +1,51 @@
+<button class="btn btn--light filter-toggle" type="button" data-filter-toggle aria-expanded="false">Фильтры</button>
+<form class="filter" data-filter hidden>
+  <div class="filter__group is-open">
+    <button class="filter__head" type="button" aria-expanded="true">Готовые изделия <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+    <div class="filter__body">
+      <label class="check"><input type="checkbox" name="ready" value="mosaic"><span class="check__box"></span>Мозайка</label>
+      <label class="check"><input type="checkbox" name="ready" value="ceramics"><span class="check__box"></span>Керамика</label>
+      <label class="check"><input type="checkbox" name="ready" value="painting"><span class="check__box"></span>Живопись</label>
+      <label class="check"><input type="checkbox" name="ready" value="pictures"><span class="check__box"></span>Картины</label>
+    </div>
+  </div>
+  <div class="filter__group">
+    <button class="filter__head" type="button" aria-expanded="false">Расходные материалы <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+    <div class="filter__body">
+      <label class="check"><input type="checkbox" name="supplies" value="smalta"><span class="check__box"></span>Смальта</label>
+      <label class="check"><input type="checkbox" name="supplies" value="canvas"><span class="check__box"></span>Холст</label>
+      <label class="check"><input type="checkbox" name="supplies" value="stretcher"><span class="check__box"></span>Холст на подрамнике</label>
+      <label class="check"><input type="checkbox" name="supplies" value="glue"><span class="check__box"></span>Клей</label>
+      <label class="check"><input type="checkbox" name="supplies" value="paints"><span class="check__box"></span>Краски</label>
+      <label class="check"><input type="checkbox" name="supplies" value="brushes"><span class="check__box"></span>Кисти</label>
+    </div>
+  </div>
+  <div class="filter__group">
+    <button class="filter__head" type="button" aria-expanded="false">Багет <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+    <div class="filter__body">
+      <label class="check"><input type="checkbox" name="baguette" value="wood"><span class="check__box"></span>Деревянный</label>
+      <label class="check"><input type="checkbox" name="baguette" value="plastic"><span class="check__box"></span>Пластиковый</label>
+    </div>
+  </div>
+  <div class="filter__group">
+    <button class="filter__head" type="button" aria-expanded="false">Онлайн продажи <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+    <div class="filter__body">
+      <label class="check"><input type="checkbox" name="online" value="new"><span class="check__box"></span>Новинки</label>
+      <label class="check"><input type="checkbox" name="online" value="sale"><span class="check__box"></span>Скидки</label>
+    </div>
+  </div>
+  <div class="filter__group is-open">
+    <button class="filter__head" type="button" aria-expanded="true">Цена ₽ <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+    <div class="filter__body">
+      <div class="filter__price">
+        <label>От<input type="text" inputmode="numeric" name="min" value="100"></label>
+        <span>-</span>
+        <label>До<input type="text" inputmode="numeric" name="max" value="100 000"></label>
+      </div>
+    </div>
+  </div>
+  <div class="filter__actions">
+    <button class="btn" type="submit">Применить</button>
+    <button class="btn btn--ghost" type="reset">Сброс</button>
+  </div>
+</form>
