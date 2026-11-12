@@ -848,6 +848,13 @@ ul { list-style: none; }
   .section { padding-top: 48px; }
   .section-head { margin-bottom: 18px; }
   .section-head .arrows { margin-bottom: 6px; }
+
+  /* Категории на телефоне — друг под другом, теги видны сразу, без карусели и стрелок */
+  .arrows--categories { display: none; }
+  .categories { flex-direction: column; height: auto; overflow: visible; scroll-snap-type: none; gap: 36px; }
+  .category, .category.is-active { flex: none; width: 100%; }
+  .category__img, .category.is-active .category__img { height: auto; aspect-ratio: 16 / 10; }
+  .category__tags, .category.is-active .category__tags { height: auto; opacity: 1; visibility: visible; margin-top: 14px; }
   .section-head .arrows .square-btn { width: 36px; height: 36px; }
 
   .cta-wrap { padding: 48px 0; }
